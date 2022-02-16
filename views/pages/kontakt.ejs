@@ -27,37 +27,37 @@
                     </div>
             </div>
             <div class="col-12 col-md-7 pais-menyy">
-              <%- include("../partials/menyy.ejs") %>
+                <%- include("../partials/menyy.ejs") %>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-lg-6 paisSektsioon-pealkirjad">
                 <div class="rida">
-                    <h2>Matkaklubi</h2>
-                    <img  class="liblikas1" src="./assets/Butterfly2.png" alt="">
-                </div>
-                <div class="rida">
-                    <h1>Puhas Higi</h1>
-                    <img  class="liblikas2" src="./assets/Butterfly.png" alt="">
-                    
-                </div>
-                <div class="rida">
-                    <h3>
-                        Terves kehas terve vaim!
-                    </h3>
-                </div>
-                <div class="button">
-                    <a href="#" class="p">VAATA TÄPSEMALT</a>
-             
-                  </div>
-            </div>
-            <div class="d-none d-lg-block col-lg-6 pealispilt">
-                <img class="matkaja"  src="./assets/matkaja.png" alt="">
-                <img class="vari" src="./assets/vari.png" alt="">
-            </div>
         </div>
     </div>
+    
+    <div class="container">
+        <h1>Sisesta teade</h1>
+        <div class="sisend mb-4">
+            <div>
+                <label for="email">E-posti aadress</label>
+                <input class="form-control" type="text" name="" id="email">
+            </div>
+    
+            <div> 
+                <label for="nimi">Nimi</label>
+                <input class="form-control" type="text" name="" id="nimi">
+            </div>
+    
+            <div>
+                <label for="teade">Teade</label>
+                <input class="form-control" type="text" name="" id="teade">
+            </div>
+            <button id="btn" onclick="lisategevus()" type="button" class="mt-2 btn btn-success">Lisa teade</button>
+        </div>
+        
+        <div id="valjund"></div>
+        <script src="./kontakt.js"></script>
 </div>
 </body>
 </html>
-© 2022 GitHub, Inc.
