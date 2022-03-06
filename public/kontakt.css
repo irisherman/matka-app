@@ -156,6 +156,13 @@
         max-width: 95%;
     
 }
+.registreeumine-pilt{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+
+}
 @media screen and (min-width: 1480px) {
     .paisSektsioon-pealkirjad {
         padding-top: 231px;
