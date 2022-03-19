@@ -73,5 +73,10 @@ const matkajadElement = document.getElementById("matka-andmed")
 matkajadElement.innerHTML = vastus
 }
 
-
+async function kustutaOsaleja(id) {
+    console.log("Kustuta: " + id)
+    let response = await fetch('/api/osaleja/' + id, {method: 'DELETE'})
+    tulemus = await response.json()
+    console.log(tulemus)
+    loeMatkad()
 loeMatkad()
