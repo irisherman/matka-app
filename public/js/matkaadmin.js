@@ -64,7 +64,7 @@ async function naitaOsalejaid(matkaIndeks) {
        
             <div class="col-4">${osalejad[i].nimi}</div>
             <div class="col-4"> ${osalejad[i].email}</div>
-            <div class="col-4">${osalejad[i].teade}</div>
+            <div class="col-4">${osalejad[i].markus}</div>
         </div>
     
         `
