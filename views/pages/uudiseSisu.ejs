@@ -9,35 +9,55 @@
 </head>
 
 <body> 
-    <div class="paisSektsioon">
-    <div class="container">
-        <div class="row pt-1">
-            <div class="col-12 col-md-5 d-flex">
-                <img class="paisLogo" src="/assets/klubilogo.png" alt="">
-                <div class="paisNimi">
-                    MATKA KLUBI
-                </div>
-            </div>
-            <div class="col-12 col-md-7 pais-menyy">
-                <%- include("../partials/menyy.ejs") %>
-            </div>
-        </div>
-                <div class="row">
-                    <h1>Uudised</h1>
-                </div>
-    <div class="row">
-            <div class="col-12">
-                <img class="card-img-top" src="<%= uudis.pildiUrl %>">
-                <div class="card-title">
-                    <%= uudis.nimetus %>
-                    <br>
-                    <%= uudis.kirjeldus %>
-                </div>
-                <br>
-            </div>
+    <div class="paisSektsioonuudised">
+        <div class="container">
+            <div class="row pt-2 ">
+                <div class="col-12 col-md-5 d-flex">
+                    <img class="paisLogo" src="/assets/klubilogo.png" alt="">
+                    <div class="paisNimi">
+                        MATKA KLUBI
+                    </div>
+               
             
+                <div class="col-md-12 col-md-7 pais-menyy">
+                   
+                    <%- include("../partials/menyy.ejs") %>
+                </div>
+        
+            </div>
 
+            <div class="container">
+                <div class="row yksikuudis">
+                    <div class="pealkiri">
+                <%= uudis.nimetus %>
+            </div>
+        <div class="card-title">
+                    
+            <%= uudis.kirjeldus %>
+            
+        </div>
+            </div>
+                <img class="card-img-top uudispilt" src="<%= uudis.pildiUrl %>">
+               
+            </div>
+            <div class="sisu-kaart">
+                    
+                <%= uudis.sisu %>
+                
+            </div>
+
+            <div class="col-12">
+               
+            </div>
+            <div class="col-11">
+                <a href="/uudised" class="btn btn-primary">Tagasi</a>
+            </div>
     </div>
+   
+
+   
+</div>
+</div>
 </body>
 
 </html>

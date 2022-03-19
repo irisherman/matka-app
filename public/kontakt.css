@@ -1,20 +1,30 @@
 
-.paisNimi  {
+.paisNimi{
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 33px;
     letter-spacing: 0px;
-    color: #0B0B0B;
+    color: #0b0b0b;
     line-height: 33px;
     max-width: 150px;
+    padding-left: 15px;
+}
+.paisSektsioon{
+    padding-top: 32px;
+    background-image: url('../assets/Hills.png');
+    background-size: cover;
+    background-repeat: none;
+    width: 100%;
+    height: 778px;
 }
 
-.paisSektsioon {
-    background-image: url('assets/Hills.png');
+.paisSektsioonuudised{
+    padding-top: 32px;
+    background-image: url('../assets/Hills.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: none;
     width: 100%;
-    height: 980px;
+    height: 120px;
 }
 
 .paisLogo {
@@ -24,30 +34,35 @@
 
 .pais-menyy {
     font-family: 'Montserrat', sans-serif;
-	font-size: 16.67px;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 2.67px;
-    margin-left: auto
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2.67px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 15px;
+    width: 100%;
+    margin-left: 480px;
 }
 
 .pais-menyy ul {
+    color: #0b0b0b;
+    text-decoration: none;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
+    width: 100%; 
+   
 }
 
 .pais-menyy li {
-    padding: 0px;
-    margin-left: 10px;
-    min-width: 100px;
+    
+    margin-left: 20px;
+    
 }
+
 
 .pais-menyy a {
     color: #0B0B0B;
 }
+
 
 .paisSektsioon-pealkirjad {
     padding-top: 20px;
@@ -130,7 +145,152 @@
 .blokk {
     min-width: 80%;
 }
+.card{
+    
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.btn{
+    margin-bottom: 20px;
+    background-color: rgb(175, 170, 170) !important;
+    color:white !important;
+}
+.btn:hover{
+    margin-bottom: 20px;
+    background-color: rgb(224, 222, 222) !important;
+    color:rgb(0, 0, 0) !important;
+}
 
+.pealkiri{
+    padding-top:20px;
+    font-size: 40px;
+    height:85px;
+    font-weight: bold;
+    padding-bottom: 80px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+    
+.card-title{
+        padding-top:5px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        height:55px;
+        margin-right: 25px;
+    }
+.sisu-kaart{
+    padding-top:15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-right: 25px;
+}
+
+.card-img-top{
+    padding-top: 20px;
+  
+ }
+ 
+  
+   .col-md-4{
+     margin-bottom: 20px;
+   }
+ 
+   
+ .col-4{
+     color: #000000;
+ }
+ .paisSektsioonuudised{
+    padding-top: 32px;
+    background-image: url('../assets/Hills.png');
+    background-size: cover;
+    background-repeat: none;
+    width: 100%;
+    height: 120px;
+}
+.paisLogo{
+    width: 66px;
+    height: 64px;
+}
+.nav{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2.67px;
+    color: #000000;
+    text-transform: uppercase;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.nav ul {
+    color: #0b0b0b;
+    text-decoration: none;
+    list-style-type: none;
+    width: 100%;   
+    ;
+  }
+
+  .nav a{
+      color: #0b0b0b;
+      
+  }
+  .nav a:hover{
+    color: #121068;
+    
+}
+  .nav li{
+      margin-left: 20px;
+    
+  }
+  .regamisform{
+    margin-top:50px
+   }
+   .registreerumine-pilt{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+    .regform{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .yksikuudis{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        
+    }
+
+    .nimetus{
+        padding-left: 15px;
+     
+    }
+
+    .kontakt{
+        margin-top: 50px;
+        padding: 50px;
+       
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .jumbotron h1{
+        line-height: 40px;
+        width: 100%;
+        text-align: center !important;
+        padding-bottom: 30px;
+  }
+    
+    .jumbotron p {
+     margin-bottom: 50px !important;
+      text-align: center;
+    }
+    .jumbotron{
+        background-color: white !important;
+    }
+    .form{
+        display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    }
 @media screen and (min-width: 600px) {
     .blokk {
         min-width: 50%;

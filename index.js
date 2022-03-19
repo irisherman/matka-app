@@ -21,7 +21,7 @@ const matk2 = {
   id: 1,
   nimetus: "Süstamak Kõrvemaal",
   kirjeldus: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Vero harum, doloremque reprehenderit tempora laboriosam tenetur sapiente at unde totam quam voluptate. Possimus magni nam voluptatibus dolore libero repellendus excepturi facere!",
-  pildiUrl:"/assets/hiking.jpg",
+  pildiUrl:"/assets/harjumaa.jpg",
   osalejad: []
 }
 matkad = [
@@ -39,14 +39,16 @@ matkad = [
 const uudis0 = {
   id: 0,
   nimetus: "Uued matkarajad Harjumaal",
-  kirjeldus: "Lorem ipsum jne",
+  kirjeldus: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Vero harum, doloremque reprehenderit tempora laboriosam tenetur sapiente at unde totam quam voluptate. Possimus magni nam voluptatibus dolore libero repellendus excepturi facere!",
   pildiUrl:"/assets/harjumaa.jpg",
+  sisu: "Cum maxime, quaerat neque modi velit similique a sit rem inventore suscipit dignissimos tempora corporis nisi sapiente labore ratione voluptatem quo nostrum! Repellendus nemo a animi eum illo delectus ipsa deleniti quia cupiditate ipsum dolor quasi qui, odit, tempore adipisci nulla, aliquam soluta incidunt quod ducimus blanditiis! Odio voluptate, quia quisquam laboriosam autem obcaecati cupiditate molestias, modi quis tempore, consequatur ab ipsa. Error eos delectus quibusdam, dignissimos explicabo consequatur soluta quas suscipit, modi consequuntur non molestiae facere possimus? Praesentium voluptates, numquam ab eos quis, atque consectetur deserunt veniam, quo tempora libero unde quibusdam dicta repellat excepturi! Doloribus, provident officiis quod et dolores ipsa iste aperiam in incidunt excepturi ipsum voluptatibus nisi. Fugit ipsum eos magni magnam ea tempora ex consequuntur, qui iusto maxime quia cumque earum excepturi laboriosam. Hic reiciendis nihil a veniam neque odio, praesentium aliquam autem", 
 }
 const uudis1 = {
   id: 1,
   nimetus: "Hea matkavarustuse tava",
-  kirjeldus: "Lorem ipsum jne",
+  kirjeldus: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Vero harum, doloremque reprehenderit tempora laboriosam tenetur sapiente at unde totam quam voluptate. Possimus magni nam voluptatibus dolore libero repellendus excepturi facere!",
   pildiUrl:"/assets/varustus.jpg",
+  sisu: "Cum maxime, quaerat neque modi velit similique a sit rem inventore suscipit dignissimos tempora corporis nisi sapiente labore ratione voluptatem quo nostrum! Repellendus nemo a animi eum illo delectus ipsa deleniti quia cupiditate ipsum dolor quasi qui, odit, tempore adipisci nulla, aliquam soluta incidunt quod ducimus blanditiis! Odio voluptate, quia quisquam laboriosam autem obcaecati cupiditate molestias, modi quis tempore, consequatur ab ipsa. Error eos delectus quibusdam, dignissimos explicabo consequatur soluta quas suscipit, modi consequuntur non molestiae facere possimus? Praesentium voluptates, numquam ab eos quis, atque consectetur deserunt veniam, quo tempora libero unde quibusdam dicta repellat excepturi! Doloribus, provident officiis quod et dolores ipsa iste aperiam in incidunt excepturi ipsum voluptatibus nisi. Fugit ipsum eos magni magnam ea tempora ex consequuntur, qui iusto maxime quia cumque earum excepturi laboriosam. Hic reiciendis nihil a veniam neque odio, praesentium aliquam autem", 
 }
 uudised = [
   uudis0,
@@ -54,8 +56,9 @@ uudised = [
 { 
   id: 2,
   nimetus: "Tule matkama koos matkasell Mati Maasikaga!",
-  kirjeldus: "Lorem ipsum jne",
+  kirjeldus: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Vero harum, doloremque reprehenderit tempora laboriosam tenetur sapiente at unde totam quam voluptate. Possimus magni nam voluptatibus dolore libero repellendus excepturi facere!",
   pildiUrl:"/assets/hiker.jpg",
+  sisu: "Cum maxime, quaerat neque modi velit similique a sit rem inventore suscipit dignissimos tempora corporis nisi sapiente labore ratione voluptatem quo nostrum! Repellendus nemo a animi eum illo delectus ipsa deleniti quia cupiditate ipsum dolor quasi qui, odit, tempore adipisci nulla, aliquam soluta incidunt quod ducimus blanditiis! Odio voluptate, quia quisquam laboriosam autem obcaecati cupiditate molestias, modi quis tempore, consequatur ab ipsa. Error eos delectus quibusdam, dignissimos explicabo consequatur soluta quas suscipit, modi consequuntur non molestiae facere possimus? Praesentium voluptates, numquam ab eos quis, atque consectetur deserunt veniam, quo tempora libero unde quibusdam dicta repellat excepturi! Doloribus, provident officiis quod et dolores ipsa iste aperiam in incidunt excepturi ipsum voluptatibus nisi. Fugit ipsum eos magni magnam ea tempora ex consequuntur, qui iusto maxime quia cumque earum excepturi laboriosam. Hic reiciendis nihil a veniam neque odio, praesentium aliquam autem", 
 }
 ]
 

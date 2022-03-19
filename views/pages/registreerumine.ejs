@@ -5,26 +5,36 @@
     <title>Matkaklubi - registreerumine</title>
     <%- include("../partials/p2is.ejs") %>
 </head>
+
 <body>
+    <div class="paisSektsioonuudised">
 <div class="container">
-    <div class="row pt-1">
-        <div class="col-md-5 d-flex">
+    <div class="row pt-2 ">
+        <div class="col-12 col-md-5 d-flex">
             <img class="paisLogo" src="/assets/klubilogo.png" alt="">
             <div class="paisNimi">
                 MATKA KLUBI
             </div>
-        </div>
-        <div class="col-md-7 pais-menyy">
+       
+    
+        <div class="col-md-12 col-md-7 pais-menyy">
+           
             <%- include("../partials/menyy.ejs") %>
         </div>
 
     </div>
+     
+    <div class="container regamisform">
+        <div class="row">
+            <div class="col-md-6 ">
     <h1>Registreeru matkale <%= matk.nimetus %> </h1>
     <img class="registreerumine-pilt" src="<%= matk.pildiUrl %>" alt="">
+</div>
+<div class="col-md-6">
     <p>
         <%= matk.kirjeldus %>
     </p>
-    <div class="row">
+
         <form action="/kinnitus" method="get">
             <div class="form-group">
                 <label for="nimi">Sinu nimi:</label>
@@ -42,6 +52,9 @@
             <input type="submit" class="btn btn-default" value="Saada">
         </form>
     </div>  
+</div>
+</div>
+</div>
 </div>
 </body>
 

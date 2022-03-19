@@ -9,49 +9,97 @@
 </head>
 
 <body>
-    <div class="paisSektsioon">
+    <div class="paisSektsioonuudised">
         <div class="container">
-            <div class="row pt-1">
+            <div class="row pt-2 ">
                 <div class="col-12 col-md-5 d-flex">
-                    <img class="paisLogo" src="./assets/klubilogo.png" alt="">
+                    <img class="paisLogo" src="/assets/klubilogo.png" alt="">
                     <div class="paisNimi">
                         MATKA KLUBI
                     </div>
-                </div>
-                <div class="col-12 col-md-7 pais-menyy">
-                    <%- include("../partials/menyy.ejs") %>
-                </div>
+                
+    
+        <div class="col-md-12 col-md-7 pais-menyy">
+           
+            <%- include("../partials/menyy.ejs") %>
+        </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-lg-6 paisSektsioon-pealkirjad">
-                    <div class="rida">
-                    </div>
-                </div>
+                    
+           
 
-                <div class="container">
+            <div class="container uudisteSektsioon pt-4">
                     <h1>Sisesta teade</h1>
+                    <hr class="rounded">
                     <div class="sisend mb-4">
-                        <div>
-                            <label for="email">E-posti aadress</label>
-                            <input class="form-control" type="text" name="" id="email">
-                        </div>
-
-                        <div>
-                            <label for="nimi">Nimi</label>
-                            <input class="form-control" type="text" name="" id="nimi">
-                        </div>
-
-                        <div>
-                            <label for="teade">Teade</label>
-                            <input class="form-control" type="text" name="" id="teade">
-                        </div>
-                        <button id="btn" onclick="lisategevus()" type="button" class="mt-2 btn btn-success">Lisa
-                            teade</button>
                     </div>
-
-                    <div id="valjund"></div>
-                    <script src="./kontakt.js"></script>
                 </div>
+                <div class="container">
+
+                    <div class="row kontakt jumbotron">
+                      <h1 class="display-4">Võta meiega ühendust</h1>
+                        <p >
+                            </p>
+                        <hr class="my-4">
+                        <p>Kui otsid konkreetset teavet meie organisatsiooni kohta või kui sul on vihjeid uute radade kohta, siis kirjuta meile, täites alloleva vormi. Meie klienditeenindusmeeskond tagab, et see jõuab vastamiseks õige inimeseni.</p>
+                
+                      <div class="col-lg-8 col-lg-offset-2 form">
+                
+                        
+                        <form id="contact-form" method="post" action="" role="form">
+                
+                        <div class="messages"></div>
+                
+                        <div class="controls">
+                
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="form_name">Eesnimi *</label>
+                                <input id="form_name" type="text" name="name" class="form-control"  required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="form_lastname">Perekonnanimi *</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control"  required="required" data-error="Lastname is required.">
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control"  required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="form_phone">Telefoninumber *</label>
+                                <input id="form_phone" type="tel" name="phone" class="form-control" >
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label for="form_message">Sõnum *</label>
+                                <textarea id="form_message" name="message" class="form-control" rows="4" required data-error="Please,leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <input type="submit" class="btn btn-default" value="Saada">
+                             
+                            </div>
+                          </div>
+                         
+                        </div>
+                
+                        </form>
 </body>
 
 </html>
