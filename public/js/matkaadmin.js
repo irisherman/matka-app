@@ -48,9 +48,7 @@ async function naitaOsalejaid(matkaIndeks) {
 <div class="col-4 p-2"><strong>Nimi</strong></div>
 <div class="col-4 p-2"><strong>Email</strong></div>
 <div class="col-2 p-2"><strong>Märkus</strong></div>
-
-
-
+<div class="col-2 "><button type="button" class=" btn-success"><i class="fa fa-plus-circle"></i></button><button type="button" class=" btn-danger"><i class="fa fa-trash-o"></i></button></div>
 </div>   
 
 `
