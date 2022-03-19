@@ -322,6 +322,35 @@
         border-style:solid ;
         border-width: 1px;
     }
+    .adminnupp{
+        width: 100%;
+       background-color: transparent;
+       border-color: transparent;
+       text-align: left;
+       color: #000000;
+       font-family: 'Poppins', sans-serif;
+       margin-top: 10px;
+       margin-bottom:10px;
+       padding: 10px;
+       text-transform: uppercase;
+       }
+       .adminnupp:hover{
+           color: rgb(255, 255, 255);
+           background-color: #3b3ef3;
+           padding: 10px;
+           border-radius: 5px;
+       }
+       .adminnupp:focus {
+           color: rgb(255, 255, 255);
+           background-color: #3b3ef3;
+           padding: 10px;
+           border-radius: 5px;
+         }
+        
+       .adminpealkiri{
+           margin-top: 50px;
+           
+       }
     .matkanimetus{
         margin-bottom: 10px;
         text-transform: uppercase;
