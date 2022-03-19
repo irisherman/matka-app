@@ -33,50 +33,48 @@ async function naitaOsalejaid(matkaIndeks) {
     let vastus = ''
     vastus += `
     <div class="pb-2">
-    <div class="matkanimetus">${matk.nimetus}</div>
-    <div class="row kirjelduseblokk">
-    <div class="col-6 "><img src="${matk.pildiUrl}" width="100%" height="100%"></img></div>
-    <div class="col-6"><p>${matk.kirjeldus}</p></div>
-</div>
-</div>
-<div class="matkanimetus">Osalejaid:  ${matk.osalejad}</div>
-</p>
+       <div class="matkanimetus">${matk.nimetus}</div>
+             <div class="row kirjelduseblokk">
+             <div class="col-6 "><img src="${matk.pildiUrl}" width="100%" height="100%"></img></div>
+             <div class="col-6"><p>${matk.kirjeldus}</p></div>
+        </div>
+    </div>
+    <div class="matkanimetus">Osalejaid:  ${matk.osalejad}</div>
+ </p>
+    
+    </div>
 
-</div>
+    <div class="row registreerijad">
+         <div class="col-4 p-2"><strong>Nimi</strong></div>
+         <div class="col-4 p-2"><strong>Email</strong></div>
+         <div class="col-2 p-2"><strong>Märkus</strong></div>
+         <div class="col-2 "><button type="button" class=" btn-success"><i class="fa fa-plus-circle"></i></button><button type="button" class=" btn-danger"><i class="fa fa-trash-o"></i></button></div>
+       
+         
+    
+    </div>   
 
-<div class="row registreerijad">
-<div class="col-4 p-2"><strong>Nimi</strong></div>
-<div class="col-4 p-2"><strong>Email</strong></div>
-<div class="col-2 p-2"><strong>Märkus</strong></div>
-<div class="col-2 "><button type="button" class=" btn-success"><i class="fa fa-plus-circle"></i></button><button type="button" class=" btn-danger"><i class="fa fa-trash-o"></i></button></div>
-</div>   
+    `
+    for(i in osalejad){
+       
+        vastus += `
+      
+        
+        <div class="row osaleja">
+       
+            <div class="col-4">${osalejad[i].nimi}</div>
+            <div class="col-4"> ${osalejad[i].email}</div>
+            <div class="col-4">${osalejad[i].markus}</div>
+        </div>
+    
+        `
+        
+    }
 
-`
-for(i in osalejad){
 
-vastus += `
-
-
-<div class="row osaleja">
-
-   <div class="col-4">${osalejad[i].nimi}</div>
-   <div class="col-4"> ${osalejad[i].email}</div>
-   <div class="col-4">${osalejad[i].markus}</div>
-</div>
-
-`
-
+   const matkajadElement = document.getElementById("matka-andmed")
+   matkajadElement.innerHTML = vastus
 }
 
 
-const matkajadElement = document.getElementById("matka-andmed")
-matkajadElement.innerHTML = vastus
-}
-
-async function kustutaOsaleja(id) {
-    console.log("Kustuta: " + id)
-    let response = await fetch('/api/osaleja/' + id, {method: 'DELETE'})
-    tulemus = await response.json()
-    console.log(tulemus)
-    loeMatkad()
 loeMatkad()
